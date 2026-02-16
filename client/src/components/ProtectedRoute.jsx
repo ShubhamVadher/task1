@@ -12,7 +12,7 @@ const ProtectedRoute = ({ children }) => {
   const checkAuth = async () => {
     try {
       const res = await axios.get(
-        "https://banao-tech-tplv.onrender.com/isloggedin",
+        "https://task1-uaqa.onrender.com/isloggedin",
         { withCredentials: true }
       );
 
@@ -36,3 +36,4 @@ const ProtectedRoute = ({ children }) => {
 };
 
 export default ProtectedRoute;
+
