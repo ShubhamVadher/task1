@@ -16,7 +16,7 @@ const Settings = () => {
 
   const fetchUser = async () => {
     try {
-      const res = await axios.get("https://banao-tech-tplv.onrender.com/me", {
+      const res = await axios.get("https://task1-uaqa.onrender.com/me", {
         withCredentials: true,
       });
       setUser(res.data);
@@ -40,7 +40,7 @@ const Settings = () => {
 
     try {
       const res = await axios.post(
-        "https://banao-tech-tplv.onrender.com/change-password",
+        "https://task1-uaqa.onrender.com/change-password",
         {
           currentPassword: form.currentPassword,
           newPassword: form.newPassword,
@@ -140,3 +140,4 @@ const Settings = () => {
 };
 
 export default Settings;
+
