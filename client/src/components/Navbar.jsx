@@ -23,7 +23,7 @@ const Navbar = () => {
   const checkAuth = async () => {
     try {
       const res = await axios.get(
-        "https://banao-tech-tplv.onrender.com/isloggedin",
+        "https://task1-uaqa.onrender.com/isloggedin",
         { withCredentials: true }
       );
       if (res.status === 200) setIsLoggedIn(true);
@@ -56,7 +56,7 @@ const Navbar = () => {
         }
 
         await axios.post(
-          "https://banao-tech-tplv.onrender.com/signup",
+          "https://task1-uaqa.onrender.com/signup",
           {
             username: form.username,
             email: form.email,
@@ -66,7 +66,7 @@ const Navbar = () => {
         );
       } else {
         await axios.post(
-          "https://banao-tech-tplv.onrender.com/signin",
+          "https://task1-uaqa.onrender.com/signin",
           {
             email: form.email,
             password: form.password,
@@ -91,7 +91,7 @@ const Navbar = () => {
   const logout = async () => {
     try {
       const res = await axios.get(
-        "https://banao-tech-tplv.onrender.com/logout",
+        "https://task1-uaqa.onrender.com/logout",
         { withCredentials: true }
       );
 
@@ -255,3 +255,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
