@@ -24,7 +24,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(cooki_parser());
 app.use(express.json())
 app.use(cors({
-  origin: "https://banao-mern-sq4t.onrender.com",
+  origin: "https://task1-1-0cf2.onrender.com",
   credentials: true
 }));
 app.post('/signin',async(req,res)=>{
